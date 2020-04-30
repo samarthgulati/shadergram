@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Shadergram - Lesson</title>
+</head>
+<body>
+  <nav>
+    <h2>
+      <a href="/">Shadergram</a>
+    </h2>
+    <ul id="lessonList">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+    <button id="nextBtn">Next</button>
+  </nav>
+  <header>
+    <img id="artist" src="artist/happy.png" alt="">
+    <blockquote id="instruction"></blockquote>
+  </header>
+  <main class="environment">
+    <div id="blocklyDiv"></div>
+    <canvas id="hydraCanvas"></canvas>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/blockly@3.20200402.1/blockly.min.js"></script>
+  <!-- <script src="../blockly.min.js"></script> -->
+  <script src="https://unpkg.com/hydra-synth"></script>
+  <!-- <script src="../hydra-synth.js"></script> -->
+  <script src="../image-editing-glsl-functions.js"></script>
+  <script src="../hydra.js"></script>
+  <script src="addSpecialBlock.js"></script>
+  <script src="generateBlocks.js"></script>
+  <script src="../lz-string.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Tahoma;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0.5rem;
+  height: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 2;
+  word-spacing: -1.55px;
+  font-weight: 500;
+  letter-spacing: 1.15px;
+}
+
+nav > h2 {
+  margin: 0;
+  font-weight: 100;
+}
+
+nav > h2 > a {
+  text-decoration: none;
+  text-shadow: 0.5px 0 2px hsl(0deg, 100%, 70%),
+  -0.5px 0 2px hsl(210deg, 100%, 70%);
+}
+
+nav > h2 > a:hover {
+  text-shadow: 2px 0 2px hsl(0deg, 100%, 70%),
+  -2px 0 2px hsl(210deg, 100%, 70%);
+}
+
+nav > button {
+  margin: 0;
+  background: none;
+  border: solid 0.2rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+nav > button:hover {
+  box-shadow: 0.15rem 0 0.2rem hsl(0deg, 100%, 70%),
+  -0.15rem 0 0.2rem hsl(210deg, 100%, 70%);
+  cursor: pointer;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav > ul > li {
+  margin: 0;
+  padding: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  border: solid 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+
+nav > ul > li.completed {
+  background: hsl(90deg, 60%, 90%);
+}
+
+nav > ul > li.current {
+  background: hsl(190deg, 60%, 90%);
+}
+
+header {
+  height: 5rem;
+  display: flex;
+  padding: 0.25rem;
+  justify-content: flex-start;
+}
+
+header > img {
+  height: 5rem;
+}
+
+header > blockquote {
+  height: 3rem;
+  border: solid 0.2rem;
+  border-radius: 2rem;
+  margin: 0;
+  min-width: 480px;
+  padding: 0.5rem 1rem;
+  white-space: pre;
+  font-family: monospace;
+  font-size: 1.1rem;
+  max-width: min-content;
+}
+
+main {
+  flex: 1;
+  display: flex;
+}
+
+main > div {
+  flex: 1;
+}
+
+main > canvas {
+  flex: 0.5;
+  object-fit: cover;
+  min-width: 320px;
+  min-height: 240px;
+  max-width: 640px;
+  max-height: 480px;
+}

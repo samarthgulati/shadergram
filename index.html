@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadergram - Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a id="hydraLink" href="https://github.com/ojack/hydra-synth" target="_blank">
+    <img src="hydra.png" alt="powered by Hydra">
+  </a>
+  <header>
+    <h2>Shadergram</h2>
+    <button id="shareBtn">Share</button>
+  </header>
+  <div class="environment">
+    <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+	  <canvas id="hydraCanvas"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/blockly@3.20200402.1/blockly.min.js"></script>
+  <!-- <script src="blockly.min.js"></script> -->
+  <script src="https://unpkg.com/hydra-synth"></script>
+  <!-- <script src="hydra-synth.js"></script> -->
+  <script src="image-editing-glsl-functions.js"></script>
+  <script src="hydra.js"></script>
+  <script src="addSpecialBlock.js"></script>
+  <script src="generateBlocks.js"></script>
+  <script src="lz-string.min.js"></script>
+  <script src="workspace.js"></script>
+</body>
+</html>
